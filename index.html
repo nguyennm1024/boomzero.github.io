@@ -7924,7 +7924,7 @@ function project_save_confirmed(input) {
                        '_via_img_metadata': _via_img_metadata,
                        '_via_attributes': _via_attributes };
 
-  var filename = input.project_name.value.replace('_anno', '') + '.json';
+  var filename = input.project_name.value.replace('_anno', '') + '_anno' + '.json';
   var data_blob = new Blob( [JSON.stringify(_via_project)],
                             {type: 'text/json;charset=utf-8'});
 
